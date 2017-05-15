@@ -3,7 +3,7 @@ number: 00
 layout: true
 class: center, middle, inverse
 ---
-# Getting Started
+# PlayFramework Tutorial
 PlayFramework Tutorial
 
 Noriaki Horiuchi, 2017
@@ -46,4 +46,7 @@ layout:false
 - 10: Testing
     - ScalaTest
 - 11: Logging
-- 12:
+- 12: Scala Collection API
+
+---
+## References

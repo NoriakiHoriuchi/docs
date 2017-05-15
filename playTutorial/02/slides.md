@@ -18,4 +18,21 @@ layout:false
 - Delete
 
 - Views
-- I18n
+
+---
+## Read
+
+---
+## Create
+
+---
+## Update
+
+---
+## Delete
+
+---
+## Views
+
+---
+## References

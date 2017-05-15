@@ -3,7 +3,7 @@ number: 01
 layout: true
 class: center, middle, inverse
 ---
-# Async Processing
+# JSON
 
 PlayFramework Tutorial {{ number }}
 
@@ -14,5 +14,24 @@ layout:false
 ## Agenda
 
 - JSON
-- Async Processing
-    - Future
+    - Output
+        - Read
+    - Input
+        - Create
+        - Update
+        - Delete
+
+---
+## Output (Read)
+
+---
+## Input (Create)
+
+---
+## Input (Update)
+
+---
+## Input (Delete)
+
+---
+## References

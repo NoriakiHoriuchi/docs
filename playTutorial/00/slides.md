@@ -30,3 +30,6 @@ layout:false
 
 ---
 ## Install IntelliJ IDEA
+
+---
+## References
