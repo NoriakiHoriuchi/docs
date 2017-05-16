@@ -25,6 +25,7 @@ layout:false
 - 02: Create CRUD Application
     - Template Engine
     - Form & Validation
+- 07: Database
 - 03: JSON
     - JSON basics
     - JSON with HTTP
@@ -38,7 +39,6 @@ layout:false
 - 05: Async Processing
 - 06: Network
     - The Play WS API
-- 07: Database
 - 08: Cache
     - Using the Cache
 - 09: Application Settings
