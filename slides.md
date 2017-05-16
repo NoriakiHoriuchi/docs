@@ -5,8 +5,7 @@ class: center, middle, inverse
 
 ---
 
-# Docs / Slides
+# NoriakiHoriuchi
+## Docs / Slides
 
 [PlayFramework Tutorial](playTutorial) (2017)
-
-Noriaki Horiuchi
