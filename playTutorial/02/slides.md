@@ -30,6 +30,8 @@ layout:false
 mkdir -p postgresql/data
 
 docker run -d --rm --name postgres -p 5432:5432 -v /Users/${USERNAME}/postgresql/data:/var/lib/postgresql/data postgres:9.6.2-alpine
+
+docker ps
 ```
 
 ---
@@ -39,13 +41,19 @@ layout:true
 ---
 ### Docker イメージに接続する
 
+- postgresql クライアントのインストール
+
+```
+brew install postgresql
+```
+
 - play_tutorial データベースを作成する
 
 ```
 psql -h localhost -U postgres
 ```
 
-- 以下のSQLを発行する
+- 以下のSQLを発行し、`play_tutorial` に接続する
 
 ```
 CREATE DATABASE play_tutorial;
@@ -176,6 +184,7 @@ object ToDo extends SQLSyntaxSupport[ToDo] {
 ```
 override def tableName = "todos"
 def defaultAlias = syntax("t")
+val t = defaultAlias
 ```
 
 ---
@@ -189,5 +198,13 @@ layout:true
 ### 演習
 
 - `def getToBeDone`、`def findById`、`def update` を実装してみよう
+    - お願い：`def update` は scalikejdbcの updateメソッドと重複してしまうので、`def updateTitle` と `def finish` に分けてください
+
+```
+def updateTitle(id: Int, title: String): Unit = ???
+
+def finish(id: Int): Unit = ???
+```
+
 - 既存の `val db: mutable.Map` を消す
 - 余裕があれば、ToDoの削除も実装してみる（画面も含め）
