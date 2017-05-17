@@ -1,10 +1,11 @@
 name: inverse
+number: 01
 layout: true
 class: center, middle, inverse
 ---
 # Create CRUD Application
 
-PlayFramework Tutorial 01
+PlayFramework Tutorial {{ number }}
 
 Noriaki Horiuchi, 2017
 
@@ -12,7 +13,13 @@ Noriaki Horiuchi, 2017
 layout:false
 ## Agenda
 
-- MVC × CRUD
+- ToDo Application
+    - MVC
+    - CRUD
+
+---
+layout: true
+## Model
 
 ---
 layout: true
