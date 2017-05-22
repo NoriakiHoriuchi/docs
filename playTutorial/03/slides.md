@@ -10,24 +10,29 @@ PlayFramework Tutorial {{ number }}
 Noriaki Horiuchi, 2017
 
 ---
+layout: false
 ## Agenda
 
-- Form
-    - Validation
-- I18n (Internationalization)
-    - DI (Dependency Injection)
+### [Form and Validation](https://www.playframework.com/documentation/2.5.x/ScalaForms)
+### [Custom Validation](https://www.playframework.com/documentation/2.5.x/ScalaCustomValidations)
+### [I18n (Internationalization)](https://www.playframework.com/documentation/2.4.x/ScalaI18N)
+### [DI (Dependency Injection)](https://www.playframework.com/documentation/2.4.x/ScalaDependencyInjection)
 
 ---
+layout: true
 ## Form And Validation
 
-- ToDo を作成（Create）、変更（Update）する
-- `title` の要件
-    - 空でない（1文字以上）
-    - 50文字以内
+---
+### Lifecycle
+![lifecycle](form-lifecycle.png)
 
 ---
-## Lifecycle
-![lifecycle](form-lifecycle.png)
+### すること
+
+- ToDo を作成（Create）、タイトルを変更（Update）する
+- `title` の要件
+    - 空でない（1文字以上）
+    - 5文字以内
 
 ---
 layout: true
@@ -38,15 +43,15 @@ layout: true
 
 - 文字列で入力する
 - 正しい形式でなければエラー
-    - java.time API
+    - java.time API (Java 8 より追加：JSR310)
 
 ---
 ## すること
 - テーブルのマイグレーション（期日カラムの追加）
 - モデルの修正（変数を追加）
-    - コントローラ、ビュー等も修正
-    - フォームの期日欄はとりあえずNone
-- 期日を設定できるようにフォームを改修
+    - コントローラも修正
+    - フォームにはまだ期日欄を設置しない
+- 期日を設定できるようにビュー、フォームを改修
 - カスタムバリデーションを作成
 
 ---
@@ -69,10 +74,3 @@ layout: true
 - PlayFramework は標準で Google の Guice を使用する
 
 コントローラに MessagesApi を Inject するなどする
-
----
-## References
-
-https://www.playframework.com/documentation/2.5.x/ScalaForms
-
-https://www.playframework.com/documentation/2.5.x/ScalaCustomValidations
