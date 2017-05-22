@@ -47,8 +47,10 @@ brew install sbt
 - 追加でプラグインをインストールしますか？と聞かれます。その中に Scala Plugin が入っているので、忘れずにインストールしてください。
 
 ---
+layout:true
 ## Create PlayFramework Project
 
+---
 - 作業フォルダを `~/play/` とします。
 - 最終的にプロジェクトのルートディレクトリ `~/play/play-scala-seed/` に移動していればOKです。
 
@@ -60,7 +62,32 @@ sbt new playframework/play-scala-seed.g8
 cd play-scala-seed
 ```
 
+対話的形式でプロジェクト名やバージョン等を聞かれます。（次のスライドへ
+
 ---
+プロジェクト名やバージョン等を聞かれますので、以下の通りにしてセットアップしてください。
+
+```
+// プロジェクト名は空欄で Enter → デフォルトの play-scala-seed になります
+name [play-scala-seed]:
+
+// 所属する組織の逆ドメインを記入して Enter
+organization [com.example]:
+
+// Scala のバージョンは 2.11.11 を指定して Enter
+scala_version [2.11.11]:
+
+// PlayFramework のバージョンは 2.5.14 を指定して Enter
+play_version [2.5.14]:
+
+// scalatestplus のバージョンは 2.0.0 を指定して Enter
+scalatestplusplay_version [2.0.0]:
+```
+
+入力し終えるとプロジェクトが生成されます。
+
+---
+layout:false
 ## Import Project to IntelliJ
 
 1. IntelliJ を起動する
