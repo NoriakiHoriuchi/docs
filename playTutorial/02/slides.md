@@ -197,14 +197,7 @@ layout:true
 ---
 ### 演習
 
-- `def getToBeDone`、`def findById`、`def update` を実装してみよう
-    - お願い：`def update` は scalikejdbcの updateメソッドと重複してしまうので、`def updateTitle` と `def finish` に分けてください
-
-```
-def updateTitle(id: Int, title: String): Unit = ???
-
-def finish(id: Int): Unit = ???
-```
-
+- `def getToBeDone`、`def findById`、`def updateTitle`、`def finish` を実装してみよう
 - 既存の `val db: mutable.Map` を消す
 - 余裕があれば、ToDoの削除も実装してみる（画面も含め）
+    - `def remove(id: Int)`
