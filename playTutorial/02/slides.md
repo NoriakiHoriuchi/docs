@@ -195,9 +195,9 @@ layout:true
 ### `def getAll`、`def create` の書き換え
 
 ---
-### 演習
+### Exercise
 
-- `def getToBeDone`、`def findById`、`def updateTitle`、`def finish` を実装してみよう
+- `def getToBeDone`、`def findById`、`def updateTitle`、`def finish` を実装してみましょう
 - 既存の `val db: mutable.Map` を消す
 - 余裕があれば、ToDoの削除も実装してみる（画面も含め）
     - `def remove(id: Int)`
