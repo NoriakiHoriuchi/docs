@@ -3,7 +3,7 @@ number: 03
 layout: true
 class: center, middle, inverse
 ---
-# Form, Validation, I18n and DI
+# Form and Validation
 
 PlayFramework Tutorial {{ number }}
 
@@ -15,8 +15,6 @@ layout: false
 
 ### [Form and Validation](https://www.playframework.com/documentation/2.5.x/ScalaForms)
 ### [Custom Validation](https://www.playframework.com/documentation/2.5.x/ScalaCustomValidations)
-### [I18n (Internationalization)](https://www.playframework.com/documentation/2.4.x/ScalaI18N)
-### [DI (Dependency Injection)](https://www.playframework.com/documentation/2.4.x/ScalaDependencyInjection)
 
 ---
 layout: true
@@ -53,24 +51,3 @@ layout: true
     - フォームにはまだ期日欄を設置しない
 - 期日を設定できるようにビュー、フォームを改修
 - カスタムバリデーションを作成
-
----
-layout: true
-## I18n
-
----
-###  Internationalization
-今回は日本語にだけ対応
-日本語のメッセージを集めたファイルを作る
-必要に応じてそれを取得する
-
-- application.conf の修正
-- messages.ja の作成
-
----
-### Dependency Injection
-- 「依存性の注入」
-- 疎結合にしてテスト性・メンテナンス性を維持するためのしくみ
-- PlayFramework は標準で Google の Guice を使用する
-
-コントローラに MessagesApi を Inject するなどする
