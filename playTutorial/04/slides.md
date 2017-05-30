@@ -22,12 +22,9 @@ layout: true
 
 ---
 ###  Internationalization
-今回は日本語にだけ対応
-日本語のメッセージを集めたファイルを作る
-必要に応じてそれを取得する
-
-- application.conf の修正
-- messages.ja の作成
+- 今回は日本語にだけ対応
+- 日本語のメッセージをまとめたファイルを作る
+- 必要に応じてメッセージを取得して表示
 
 ---
 ### Dependency Injection
@@ -35,4 +32,16 @@ layout: true
 - 疎結合にしてテスト性・メンテナンス性を維持するためのしくみ
 - PlayFramework は標準で Google の Guice を使用する
 
-コントローラに MessagesApi を Inject するなどする
+---
+
+### すること
+
+- application.conf の修正
+- messages.ja の作成
+- コントローラに MessagesApi を Inject する
+- テンプレートに Messages を Inject する
+
+???
+
+BuiltinModule.scala の紹介
+実際に注入する際は Modules を定義する
