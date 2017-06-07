@@ -87,6 +87,5 @@ ExecutionContextはタスクを実行するスレッドプールのようなも�
 ## Exercise
 
 - メールの送信
-    - 作成時に、ToDoの内容を送信
     - DBからメールアドレスを全件取得して送信
     - 送信対象メールアドレスをフォームから登録
